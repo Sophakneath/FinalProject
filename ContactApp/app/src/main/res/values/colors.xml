@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainColor">#56c0fb</color>
+    <color name="mainColor1">#d356c0fb</color>
+    <color name="iconBlack">#000000</color>
+    <color name="iconWhite">#ffffff</color>
+    <color name="whiteBlurr">#9187939a</color>
+    <color name="grey">#bababa</color>
+    <color name="colorTitle">#717171</color>
+    <color name="colorSubTitle">#b7b7b7</color>
+    <color name="lightGray">#f7f7f7f7</color>
+    <color name="emailColor">#4ba9fd</color>
+    <color name="fbColor">#354b89</color>
+    <color name="instagramColor">#e95fa0</color>
+    <color name="lineColor">#63ba2c</color>
+    <color name="linkedinColor">#186bae</color>
+    <color name="skypeColor">#2584c8</color>
+    <color name="telegramColor">#519be1</color>
+    <color name="twitterColor">#4e9ee9</color>
+    <color name="viberColor">#61309e</color>
+    <color name="wechatColor">#51864e</color>
+    <color name="whatsappColor">#49a646</color>
+</resources>

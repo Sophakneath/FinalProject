@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical"
+    android:background="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/mainColor"
+            android:visibility="visible"
+            android:id="@+id/picture">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/arrow"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBtn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/contact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACT"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/title"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/saveChange"/>
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/progressbar"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDEDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_below="@+id/picture">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/userprofile"
+                android:id="@+id/profile"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/EditPhotoBtn">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@color/whiteBlurr"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/camera"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Username "
+                android:gravity="center_vertical"
+                android:textSize="17dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:textColor="@color/iconBlack"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:text="Pheak Neath"
+                android:id="@+id/editUsername"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Phone Number "
+                android:gravity="center_vertical"
+                android:textSize="17dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:textColor="@color/iconBlack"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:text="010 43 50 42"
+                android:id="@+id/editPhoneNum"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:id="@+id/editEmail">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="Email"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="17dp"
+                android:textColor="@color/iconBlack" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_go"
+                android:id="@+id/go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Gender"
+                android:textColor="@color/iconBlack"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="38dp"
+                android:gravity="center_vertical"/>
+            
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="38dp"
+                android:text="Female"
+                android:background="@color/white"
+                android:id="@+id/female"
+                android:layout_toLeftOf="@+id/male"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="38dp"
+                android:layout_alignParentRight="true"
+                android:text="Male"
+                android:background="@color/grey"
+                android:id="@+id/male"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

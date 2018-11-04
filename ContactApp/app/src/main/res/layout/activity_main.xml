@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainColor1"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/contact"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/contact"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My CONTACT"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:layout_below="@+id/contact"
+            android:id="@+id/stringContact"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

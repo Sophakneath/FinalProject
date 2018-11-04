@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">MyContact</string>
+    <string name="facebook_app_id">2038052222924920</string>
+    <string name="fb_login_protocol_scheme">fb2038052222924920</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="infoList">
+        <item>- - - Choose - - -</item>
+        <item>Email</item>
+        <item>Facebook</item>
+        <item>Instagram</item>
+        <item>Line</item>
+        <item>Linkedin</item>
+        <item>Skype</item>
+        <item>Telegram</item>
+        <item>Twitter</item>
+        <item>Viber</item>
+        <item>Wechat</item>
+        <item>Whatsapp</item>
+        <item>Contact</item>
+    </string-array>
+
+</resources>

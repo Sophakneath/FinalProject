@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContactFragment"
+    android:orientation="vertical"
+    android:tag="contactfragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/mainColor">
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:id="@+id/profileInfo"
+                    android:background="#ffffff"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/userprofile"
+                        android:id="@+id/profile"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:id="@+id/username"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTitle"
+                            android:layout_marginTop="16dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="16dp"
+                            android:id="@+id/userPhoneNum"
+                            android:textColor="@color/colorSubTitle"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/username"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <ProgressBar
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/progressbar"
+                            android:visibility="gone"
+                            android:layout_marginTop="23dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="Contact In Phone"
+                android:paddingLeft="7dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorTitle"
+                android:textStyle="bold"
+                android:id="@+id/titleContact"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 contacts"
+                android:textColor="@color/colorSubTitle"
+                android:layout_toRightOf="@+id/titleContact"
+                android:paddingTop="3dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/total"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:id="@+id/contactInPhone"
+                android:background="#ffffff"
+                android:touchscreenBlocksFocus="true"
+                android:layout_below="@+id/titleContact"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/progressLoading"
+                android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactSharing"
+                android:paddingTop="3dp"
+                android:text="Sharing Contact"
+                android:paddingLeft="7dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorTitle"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 contacts"
+                android:textColor="@color/colorSubTitle"
+                android:paddingTop="3dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/total1"/>
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/contactByShare"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+            </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

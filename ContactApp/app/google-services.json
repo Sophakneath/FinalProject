@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "351211668902",
+    "firebase_url": "https://projecthrd-c4b98.firebaseio.com",
+    "project_id": "projecthrd-c4b98",
+    "storage_bucket": "projecthrd-c4b98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351211668902:android:4cad1c5e1df5f800",
+        "android_client_info": {
+          "package_name": "com.example.phakneath.contactapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351211668902-ifphgdj66dpj7hfsdso1obtrd3rud9bm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm4rZeXAAj1lG0IXeKLMuN3ZgBWIM3WcM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
