@@ -246,7 +246,7 @@ public class AddInfoActivity extends AppCompatActivity implements View.OnClickLi
         code.setVisibility(View.GONE);
 
         name.setHint("Username");
-        name.setTag("Username ");
+        name.setTag("Username");
         email.setHint("Email");
     }
 
